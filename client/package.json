@@ -5,7 +5,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server",
-    "prebuild": "npm i -g webpack-cli && npm i -D webpack-cli",
+    "prebuild": "npm i -g webpack-cli",
     "build": "webpack --mode production",
     "start": "webpack --watch"
   },
