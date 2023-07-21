@@ -24,7 +24,10 @@ export const getDb = async () => {
   const store = jateDb.transaction("jate", "readonly").objectStore("jate");
   const request = store.getAll();
   const result = await request;
-  return result[0].text;
+  if (result && result[0]) {
+    return result[0].text;
+  }
+  return undefined;
 };
 
 initdb();
