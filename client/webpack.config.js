@@ -19,8 +19,8 @@ module.exports = () => {
         template: "./index.html",
       }),
       new WebpackPwaManifest({
-        name: "text-editor",
-        description: "text-editor",
+        name: "JATE",
+        description: "just another text editor",
         filename: "manifest.json",
         publicPath: "/",
         icons: [
@@ -38,6 +38,8 @@ module.exports = () => {
 
     module: {
       rules: [
+        // My commit history speaks to my incompetence this week, but without
+        // this loader, src="./src/images/logo.png" in index.html does not resolve...
         {
           test: /\.html$/i,
           loader: "html-loader",
