@@ -9,7 +9,7 @@ This application provides a text editor that runs in the browser and saves the c
 ## Usage
 
 Try it out!
-[JATE](https://mysterious-hamlet-23740-306e2dfaf2ea.herokuapp.com/)
+[JATE](https://jg-pwa-text-editor-29395f144ed6.herokuapp.com/)
 
 Notes are only saved once the focus changes from the editor body. Feel free to refresh the browser or close and reopen the app to see that your notes persist!
 
